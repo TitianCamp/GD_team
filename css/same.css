@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Philosopher", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;   
+}
+
+.head {
+    width: 1459.2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    top: 25px;
+    height: 150px;
+    
+}
+
+.GD {
+    font-size: 90px;
+    font-family: "Monotype Corsiva";
+    color: white;   
+    margin: 50px 10px 
+}
+  
+.menu-i {
+    position: absolute;
+    top: calc(50% - 22.5px);
+    right: 50px;
+    background-color: rgba(196, 0, 0, 0.45);
+    padding: 5px;
+    border-radius: 10px;
+    width: 70px;
+    height: 45px 
+}
+
+.menu-i:hover {
+    transition: all .5s ease;
+    background-color: #c40000;
+    box-shadow: 0 0 5px #c40000, 0 0 10px #c40000, 0 0 15px #c40000, 0 0 20px #c40000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-t {
+    display: none;
+}
+
+.nav-t.active {
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1459.2px;
+}
+.nav-t-li {
+    font-size: 30px;
+    margin: 0;
+    padding: 2px 15px;
+    border-radius: 50px;
+}
+
+.nav-t-li::after {
+    position: relative;
+    height: 5px;
+    width: 120%;
+    content: "";
+    background-color: #c40000;
+    border-radius: 50px;
+    display: block;
+    top: 5px;
+    right: 10%;
+}
+
+.nav-t-li:hover::after {
+    display: none;
+}
+
+.nav-t-li:hover {
+    transition: all .3s ease;
+    color: white;
+    background-color: #c40000;
+}

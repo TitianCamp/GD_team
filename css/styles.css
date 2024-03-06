@@ -1,0 +1,394 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Philosopher", sans-serif;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    top: 25px;
+    height: 400px;
+    width: 345px;
+}
+
+.GD {
+    position: relative;
+    top: 25px;
+    font-family: "Lugrasimo", cursive;
+    font-size: 90px;
+    color: white;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-t {
+    margin:0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.nav-t-li {
+    font-size: 30px;
+    margin: 25px 10px;
+    padding: 2px 15px;
+    border-radius: 50px;
+}
+
+.nav-t-li::after {
+    position: relative;
+    height: 5px;
+    width: 120%;
+    content: "";
+    background-color: #c40000;
+    border-radius: 50px;
+    display: block;
+    top: 5px;
+    right: 10%;
+}
+
+.nav-t-li:hover::after {
+    display: none;
+}
+
+.nav-t-li:hover {
+    transition: all .3s ease;
+    color: white;
+    background-color: #c40000;
+}
+.block-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    height: max-content;
+    margin: 100px 0;
+}
+
+.collage {
+    border-radius: 25px;
+    width: 63%;
+    height: auto;
+}
+
+.text {
+    margin: 0;
+    padding: 10% 40px;
+    box-sizing: border-box;
+    border: 5px #c40000 solid;
+    border-left: none;
+    border-right: none;
+    border-radius: 25px;
+    width: 35%;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+.block-2 {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.block-2-1 {
+    margin: 0;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+}
+
+.new-ch {
+    margin: 50px 0;
+}
+
+.ch-box{
+    margin: 0 0 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.chapter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.chapter::after {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: white;
+    border-radius: 50px;
+    display: block;
+    top: 5px;
+}
+
+.volume {
+    width: 300px;
+    height: 450px;
+    margin-bottom: 25px;
+}
+
+.block-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    height: max-content;
+    margin: 100px 0;
+}
+
+.video {
+    width: 63%;
+    height: auto;
+    border: 0;
+    border-radius: 25px;
+}
+
+footer {
+    width: 100%;
+    height: max-content;
+    padding: 25px 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.foot {
+    width: 96%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-f {
+    width: auto;
+    height: 150px;
+}
+
+.form {
+    width: 600px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.registration {
+    width: 270px;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Philosopher", sans-serif;
+    border: 3px #c40000 solid;;
+    background-color: black;
+    color: white;
+}
+
+.enter {
+    border-radius: 50px;
+    border: 3px #c40000 solid;;
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    width: 270px;
+    height: 35px;
+    font-size: 20px;
+    font-family: "Philosopher", sans-serif;
+}
+
+.enter:hover {
+    transition: all .3s ease;
+    background-color: #c40000;
+}
+
+.mini-block {
+    width: 160px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.menu-i {
+    background-color: rgba(196, 0, 0, 0.45);
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.menu-i:hover {
+    transition: all .5s ease;
+    background-color: #c40000;
+    box-shadow: 0 0 5px #c40000, 0 0 10px #c40000, 0 0 15px #c40000, 0 0 20px #c40000;
+}
+
+.contacts {
+    margin-top: 30px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts img {
+    height: 40px;
+    margin: 0;
+}
+
+.nav-b {
+    position: absolute;
+    left: 0;
+    top: 2815px;
+    display: none;
+}
+
+.nav-b.active {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-b-li {
+    font-size: 30px;
+    margin: 10px;
+    padding: 2px 15px;
+    border-radius: 50px;
+}
+
+.nav-b-li:hover {
+    transition: all .3s ease;
+    color: white;
+    background-color: #c40000;
+}
+
+@media screen and (width<1023px) {
+    .block-1, .block-2, .block-3, .nav-t, .nav-b {
+        flex-wrap: wrap;
+    }    
+    .GD {
+        font-size: 70px;
+    }
+    .collage, .video {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .video {
+        height: 350px;
+    }
+    .text {
+        width: 100%;
+        padding: 7% 20px;
+    }
+    .chapter:last-child {
+        display: none;
+    }
+    .block-2-1 {
+        font-size: 25px;
+    }
+    .foot {
+        padding: 20px 40px;
+        height: max-content;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+   .form {
+        height: max-content;
+        width: 300px;
+    }
+   .nav-b-li {
+      font-size: 25px;
+    }
+   .nav-b {
+     top: 3130px;
+    }
+}
+
+@media screen and (width<767px){
+    .text {
+        font-size: 25px;
+        padding: 7% 15px;
+    }
+    .GD {
+        font-size: 50px;
+    }
+    .video {
+        height: 250px;
+    }
+    .chapter:nth-child(2) {
+        display: none;
+    }
+    .form {
+        margin: 20px auto 20px;
+        height: max-content;
+    }
+    .foot {
+        padding: 0 40px;
+        height: max-content;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .mini-block {
+        width: 200px;
+        height: auto;
+    }
+    .contacts {
+        margin-top: 10px;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contacts img {
+        margin: 0;
+        height: 50px;
+    }
+    .nav-menu {
+        display: none;
+    }
+}
