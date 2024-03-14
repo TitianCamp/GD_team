@@ -1,6 +1,6 @@
-console.log(jQuery().jquery);
-//цей скрипт для меню «бургера»
+const button = document.querySelector("#burger");
+const menu = document.querySelector(".nav-t");
 
-$(document).on('click', '#burger', function () {
-    $('.nav-t').toggleClass('active');
-});
+button.addEventListener("click", () => {
+    menu.classList.toggle("active");
+})

@@ -1,10 +1,11 @@
+const button = document.querySelector("#burger");
+const menu = document.querySelector(".nav-b");
+
+button.addEventListener("click", () => {
+    menu.classList.toggle("active");
+})
+
 console.log(jQuery().jquery);
-//цей скрипт для меню «бургера»
-
-$(document).on('click', '#burger', function () {
-    $('.nav-b').toggleClass('active');
-});
-
 
 // Submit subscription form using Ajax
 $('#subscription_form').on('submit', function (e) {
@@ -12,12 +13,12 @@ $('#subscription_form').on('submit', function (e) {
     let $form = $(this);
     $.ajax({
         type: 'POST',
-        url: '/GD/php/subscription_ajax.php',
+        url: '../php/subscription_ajax.php',
         data: $form.serialize()
     }).done(function () {
         $form[0].reset()
-        alert('Thank you for the subscription!')
+        alert('Вас прийнято до золотого світанку!')
     }).fail(function () {
-        alert('Something went wrong')
+        alert('Ви занадто слабкі(')
     });
 });

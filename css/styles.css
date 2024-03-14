@@ -80,7 +80,7 @@ nav {
 }
 
 .nav-t-li:hover::after {
-    display: none;
+    visibility: hidden;
 }
 
 .nav-t-li:hover {
@@ -247,7 +247,7 @@ footer {
     background-color: #c40000;
 }
 
-.mini-block {
+.contacts-block {
     width: 160px;
     height: 150px;
     display: flex;
@@ -374,7 +374,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
     }
-    .mini-block {
+    .contacts-block {
         width: 200px;
         height: auto;
     }

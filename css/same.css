@@ -31,7 +31,7 @@ header {
 
 .GD {
     font-size: 90px;
-    font-family: "Monotype Corsiva";
+    font-family: "Lugrasimo", cursive;
     color: white;   
     margin: 50px 10px 
 }
@@ -62,15 +62,21 @@ a {
     color: inherit;
 }
 
-.nav-t {
-    display: none;
+nav{
+    width: 100%;
 }
 
-.nav-t.active {
+.nav-t {
+    padding: 0;
     margin: 25px 0 0;
     display: flex;
     justify-content: space-evenly;
-    width: 1459.2px;
+    width: 100%;
+    visibility: hidden;
+}
+
+.nav-t.active {
+    visibility: inherit;
 }
 .nav-t-li {
     font-size: 30px;

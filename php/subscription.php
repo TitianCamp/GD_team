@@ -1,6 +1,6 @@
 <?php
 
-const SUBSCRIPTIONS_FILE = "./php/subscriptions.ser";
+const SUBSCRIPTIONS_FILE = "../GD/storage/subscriptions.ser";
 /**
 * Дістає список із усіх підписок з файлу
 * @return array
@@ -24,5 +24,3 @@ function addSubscription($params) {
         die("Помилка запису у файл");
     }
 }
-
-?>
