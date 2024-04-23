@@ -15,7 +15,7 @@ header {
 }
 
 .head {
-    width: 1459.2px;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -33,7 +33,7 @@ header {
     font-size: 90px;
     font-family: "Lugrasimo", cursive;
     color: white;   
-    margin: 50px 10px 
+    margin: 50px 10px;
 }
   
 .menu-i {
@@ -67,6 +67,7 @@ nav{
 }
 
 .nav-t {
+    flex-wrap: wrap;
     padding: 0;
     margin: 25px 0 0;
     display: flex;
@@ -80,7 +81,7 @@ nav{
 }
 .nav-t-li {
     font-size: 30px;
-    margin: 0;
+    margin: 25px 10px;
     padding: 2px 15px;
     border-radius: 50px;
 }
@@ -105,4 +106,42 @@ nav{
     transition: all .3s ease;
     color: white;
     background-color: #c40000;
+}
+
+@media screen and (width<1150px) {
+    .nav-t {
+        visibility: inherit
+    }
+    .menu-i {
+        display: none;
+    }
+    .head {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (width<787px){
+    header {
+        height: 350px;
+    }
+}
+
+@media screen and (width<648px){
+    .GD {
+        font-size: 50px;
+        margin: 50px 100px;
+    }
+    header {
+        height: 300px;
+    }
+}
+
+@media screen and (width<300px){
+    .GD {
+        font-size: 35px;
+        margin: 50px 10px;
+    }
+    header {
+        height: 300px;
+    }
 }

@@ -392,3 +392,29 @@ footer {
         display: none;
     }
 }
+
+@media screen and (width<300px) {
+    header {
+        height: 450px;
+    }
+    .GD {
+        font-size: 35px;
+    }
+    .registration, .enter{
+        width: 240px;
+    }
+    .logo {
+        width: 250px;
+        height: 300px;
+    }
+    .new-ch{
+        font-size: 30px;
+    }
+    .volume {
+        width: 250px;
+        height: 400px;
+    }
+    .form {
+        width: 200px;
+    }
+}
